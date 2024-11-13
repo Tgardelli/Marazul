@@ -6,6 +6,10 @@
 
 MarAzul é um projeto que visa demonstrar a importancia da preservação da vida marinha, disponibilizando uma lista das principais organizações que luta pela preservação dos nosso mares, algumas curiosidades sobre os mares de acordo com a profundidade para ser mais interativo.
 
+# 🐟 ODS
+
+<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-14.svg"/>
+
 # 📁 Acesso ao projeto
 
 Será possivel abrir ou baixar e executar o website em maquina local.
