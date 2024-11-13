@@ -26,5 +26,5 @@ O projeto será disponibilizado em forma de site, host pelo github pages: <link>
 
 # Autores
 
-| [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Thiago Gardelli</sub>](https://github.com/Tgardelli) |  [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Vitoria Silva Milnitz</sub>](https://github.com/lugardolinkgithub) |
+| [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Thiago Gardelli</sub>](https://github.com/Tgardelli) |  [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Vitoria Silva Millnitz</sub>](https://github.com/lugardolinkgithub) |
 | :---: | :---: |
