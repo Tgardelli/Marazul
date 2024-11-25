@@ -1,0 +1,188 @@
+/* Reset and base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Light background color for better contrast */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header.main-header {
+    background-color: #3689D6; /* Harmonize header color */
+    height: 10vh; /* 10% of the page height */
+    display: flex;
+    justify-content: space-between; /* Space between header elements */
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem; /* Adjusted font-relative spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item, .login-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem; /* Font-relative spacing */
+    padding: 0.5rem 1rem; /* Font-relative spacing */
+    font-size: 1rem; /* Font-relative size */
+}
+
+.login-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition for future login page */
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover lightening effect */
+}
+
+/* Main content styles */
+main {
+    margin: 5px auto 0 auto; /* Margin to overlap header and center */
+    max-width: 1920px; /* Limit maximum content width */
+    background-color: white; /* Background color for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+}
+
+main::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full-page gradient */
+    pointer-events: none;
+    z-index: -1; /* Doesn't interfere with other elements */
+}
+
+/* Section styles */
+div[id^="parte"] p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff; /* White text for visibility */
+}
+
+#parte1 {
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.726), rgba(0, 128, 192, 0)), url('/imgs/praia.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 1px; /* Rounded corners */
+}
+
+#parte2, #parte3, #parte4, #parte5, #parte6, #parte7 {
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 1px; /* Rounded corners */
+}
+
+#parte2 {
+    background: linear-gradient(to top, rgba(0, 92, 138, 0.8) 0%, rgba(14, 139, 201, 0.8) 100%);
+}
+
+#parte3 {
+    background: linear-gradient(to top, rgba(0, 23, 34, 0.8) 10%, rgba(0, 92, 138, 0.8) 100%);
+}
+
+#parte4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 23, 34, 0.8) 100%);
+}
+
+#parte5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#parte6 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 70%, rgba(233, 233, 233, 0.8) 100%);
+}
+
+#parte7 {
+    background: linear-gradient(to top, rgba(233, 233, 233, 0.8) 0%, rgba(233, 233, 233, 0.8) 100%);
+    color: rgb(86, 86, 255);
+}
+
+#parte7texto {
+    color: blue;
+}
+
+/* Text and image styles */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin: auto;
+    padding: 5px;
+}
+
+.texto-e-imagem {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Space between text and image */
+}
+
+.div-img {
+    max-width: 30%; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    border: 3px solid white; /* Adds a white border around the image */
+    border-radius: 5px;
+    margin-left: 20px; /* Adds space between text and image */
+}
+
+.texto-intro h1 {
+    font-size: 1.5em; /* Font size for the main heading */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #220d3a; /* Text color */
+    margin-bottom: 10px; /* Margin below the heading */
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #5F9EA0; /* Harmonize footer color */
+    color: white;
+}
+
+/* Return to top button styles */
+.return-to-top {
+    position: fixed; /* Keeps button in place */
+    bottom: 20px; /* Distance from bottom of page */
+    right: 20px; /* Distance from right of page */
+    width: 50px; /* Square button */
+    height: 50px; /* Square button */
+    background-color: #ffffff; /* Same color as the background */
+    border: 3px solid rgb(82, 142, 150); /* Button border */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hidden via JavaScript */
+    cursor: pointer; /* Changes cursor on hover */
+    outline: none; /* Maintains appearance */
+}
+
+.return-to-top:focus {
+    box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Focus effect for button */
+}
