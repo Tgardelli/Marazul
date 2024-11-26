@@ -1,5 +1,7 @@
 <h1 align="center"> MarAzul </h1>
 
+<p align="center"> <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"> </p>
+
 # 🐟 ODS 14
 MarAzul é um projeto que tem como objetivo contribuir com a conservação e o uso sustentável dos oceanos, mares e recursos marinhos, disponibilizando uma lista das principais organizações que apoiam essa causa e como ajudar. Além de apresentar algumas curiosidades sobre o que existe na vida na água e dicas de preservação.
 
