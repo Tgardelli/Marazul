@@ -2,16 +2,16 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
+# 🐟 ODS
+
+<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-14.svg"/>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 MarAzul é um projeto que tem como objetivo contribuir com a conservação e o uso sustentável dos oceanos, mares e recursos marinhos, disponibilizando uma lista das principais organizações que apoiam essa causa e como ajudar.
 Além de apresentar algumas curiosidades sobre o que existe na vida na água e dicas de preservação.
 
-# 🐟 ODS
-
-<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-14.svg"/>
-
-# :hamer: Funcionalidades do prrojeto
+# 🛠️ Funcionalidades do projeto
 
 # 📁 Acesso ao projeto
 
