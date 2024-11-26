@@ -24,6 +24,4 @@ Acesse o projeto pelo [GitHub](https://github.com/vitoriamillnitz/Marazul) ou [G
 - ``CSS``
 
 # Autores
-
-| [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Thiago Gardelli</sub>](https://github.com/Tgardelli) |  [<img loading="lazy" src="lugardaimgdeperfilhttps" width=115><br><sub>Vitoria Silva Millnitz</sub>](https://avatars.githubusercontent.com/u/72463531?s=400&u=9d1c282caeeafbf0d0c35c90236bcc9fd3d66e4f&v=4) |
-| :---: | :---: |
+![Vitória Millnitz](![alt text](image-1.png))
