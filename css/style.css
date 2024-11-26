@@ -94,7 +94,7 @@ div[id^="parte"] p {
     border-radius: 1px; /* Rounded corners */
 }
 
-#parte2, #parte3, #parte4, #parte5, #parte6, #parte7 {
+#parte2, #parte3, #parte4, #parte5, #parte6 {
     padding: 20px; /* Add padding for spacing */
     border-radius: 1px; /* Rounded corners */
 }
@@ -125,7 +125,7 @@ div[id^="parte"] p {
 }
 
 #parte7texto {
-    color: blue;
+    color: white;
 }
 
 /* Text and image styles */
@@ -181,8 +181,4 @@ footer {
     display: none; /* Initially hidden via JavaScript */
     cursor: pointer; /* Changes cursor on hover */
     outline: none; /* Maintains appearance */
-}
-
-.return-to-top:focus {
-    box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Focus effect for button */
 }
