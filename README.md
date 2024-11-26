@@ -15,7 +15,7 @@ Além de apresentar algumas curiosidades sobre o que existe na vida na água e d
 
 # 📁 Acesso ao projeto
 
-Será possível acessar através do GitHub Pages: <a href="https://vitoriamillnitz.github.io/Marazul/"></a> e do GitHub: <a href="https://github.com/vitoriamillnitz/Marazul"></a>
+Acesse o projeto pelo [GitHub](https://github.com/vitoriamillnitz/Marazul) ou [GitHub Pages](https://vitoriamillnitz.github.io/Marazul/).
 
 
 # ✔️ Tecnologias utilizadas
