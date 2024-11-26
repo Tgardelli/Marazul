@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MarAzul: A nossa vida marinha.</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="main-header">
+        <div class="logo" style="display: flex; align-items: center; cursor:pointer;" onclick="window.location.href='index.html';">
+            <img src="imgs/logo.png" width="80" alt="logo do MarAzul">
+            <p>MarAzul</p>
+        </div>
+        <nav class="menu-container">
+            <a href="#Sobre" class="menu-item">Sobre</a>
+            <a href="#Parceiros" class="menu-item">Parceiros</a>
+            <button class="login-button" onclick="window.location.href='login.html';">Login</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página de login -->
+    <main>
+        <div id="loginPagina">
+            <div id="login">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit" class="login-page-button">
+                        Entrar
+                    </button>
+                    
+                    <div>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </main>
+ 
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <a href="https://tgardelli.github.io/CVfrontend/" target="_blank">Thiago Gardelli</a>
+        <p></p>
+        <a href="file:///C:/Users/vitor/OneDrive/Documentos/Programa%C3%A7%C3%A3o_Web_Front_End/Atividade_Pr%C3%A1tica%20_%20CV_com_fotos/index.html" target="_blank">Vitória Silva Millnitz</a>
+        <nav class="footer-nav">
+            <a href="https://www.un.org/sustainabledevelopment/pt-br/">ODS UN</a> <!-- Link para a página oficial dos ODS -->
+        </nav>
+    </footer>
+
+</body>
+</html>

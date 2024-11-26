@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MarAzul: A nossa vida marinha.</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+        <!-- Cabeçalho da página -->
+        <header class="main-header">
+            <div class="logo" style="display: flex; align-items: center; cursor:pointer;" onclick="window.location.href='index.html';">
+                <img src="imgs/logo.png" width="80" alt="logo do MarAzul">
+                <p>MarAzul</p>
+            </div>
+            <nav class="menu-container">
+                <a href="#Sobre" class="menu-item">Sobre</a>
+                <a href="#Parceiros" class="menu-item">Parceiros</a>
+                <button class="login-button" onclick="window.location.href='login.html';">Login</button>
+            </nav>
+        </header>
+
+        <!-- Conteúdo da página de cadastro -->
+        <main>
+            <div class="cadastro-container">
+                <div class="cadastro-form">
+                    <h2 class="form-title">Cadastre-se</h2>
+                    <form action="./login.html" method="GET" class="form-content">
+                        <label for="name" class="input-label">Nome:</label>
+                        <input type="text" id="name" name="name" required class="input-field">
+        
+                        <label for="email" class="input-label">Email:</label>
+                        <input type="email" id="email" name="email" required class="input-field">
+        
+                        <label for="password" class="input-label">Senha:</label>
+                        <input type="password" id="password" name="password" required class="input-field">
+        
+                        <label for="confirm-password" class="input-label">Confirmar Senha:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required class="input-field">
+        
+                        <label for="phone" class="input-label">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required class="input-field">
+        
+                        <button type="submit" class="cadastrar-button" onclick="window.location.href='login.html';">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer class="footer">
+            <a href="https://tgardelli.github.io/CVfrontend/" target="_blank">Thiago Gardelli</a>
+            <p></p>
+            <a href="file:///C:/Users/vitor/OneDrive/Documentos/Programa%C3%A7%C3%A3o_Web_Front_End/Atividade_Pr%C3%A1tica%20_%20CV_com_fotos/index.html" target="_blank">Vitória Silva Millnitz</a>
+            <nav class="footer-nav">
+                <a href="https://www.un.org/sustainabledevelopment/pt-br/">ODS UN</a> <!-- Link para a página oficial dos ODS -->
+            </nav>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,327 @@
+/* Reset and base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Light background color for better contrast */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* aparencia do menu */
+header.main-header {
+    background-color: #3689D6; /* cor do menu */
+    height: 10vh; /* 10% do tamanho da pagina */
+    display: flex;
+    justify-content: space-between; /* adiciona espaço entre os elementos */
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem; /* ajusta de maneira relativa a fonte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* leve sombra para dar profundidade ao menu */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item, .login-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem; /* ajusta de maneira relativa a fonte */
+    padding: 0.5rem 1rem; /* ajusta de maneira relativa a fonte */
+    font-size: 1rem; /* ajusta a fonte de maneira relativa */
+}
+
+.login-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* efeito de transição */
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
+}
+
+/* Estilo principal */
+main {
+    margin: 5px auto 0 auto; /* Margin to overlap header and center */
+    max-width: 1920px; /* Limit maximum content width */
+    background-color: white; /* Background color for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+}
+
+main::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full-page gradient */
+    pointer-events: none;
+    z-index: -1; /* Doesn't interfere with other elements */
+}
+
+/* Section styles */
+div[id^="parte"] p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff; /* White text for visibility */
+}
+
+#parte1 {
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.726), rgba(0, 128, 192, 0)), url('/imgs/praia.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 1px; /* Rounded corners */
+}
+
+#parte2, #parte3, #parte4, #parte5, #parte6, #parte7 {
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 1px; /* Rounded corners */
+}
+
+#parte2 {
+    background: linear-gradient(to top, rgba(0, 92, 138, 0.8) 0%, rgba(14, 139, 201, 0.8) 100%);
+}
+
+#parte3 {
+    background: linear-gradient(to top, rgba(0, 23, 34, 0.8) 10%, rgba(0, 92, 138, 0.8) 100%);
+}
+
+#parte4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 23, 34, 0.8) 100%);
+}
+
+#parte5 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(233, 233, 233, 0.8) 100%);
+}
+
+#parte6 {
+    background: linear-gradient(to top, rgba(233, 233, 233, 0.8) 0%, rgba(233, 233, 233, 0.8) 100%);
+    color: rgb(86, 86, 255);
+}
+
+#parte6texto {
+    color: rgb(40, 52, 160);
+}
+
+/* Estilo para texto e imagem */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin: auto;
+    padding: 5px;
+}
+
+.texto-e-imagem {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Space between text and image */
+}
+
+.div-img {
+    max-width: 30%; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    border: 3px solid white; /* Adds a white border around the image */
+    border-radius: 5px;
+    margin-left: 20px; /* Adds space between text and image */
+}
+
+.texto-intro h1 {
+    font-size: 1.5em; /* Font size for the main heading */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    color: #220d3a; /* Text color */
+    margin-bottom: 10px; /* Margin below the heading */
+    text-align: center;
+}
+
+.texto-intro p {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* Estilos do footer */
+footer {
+    margin-top: auto; /* Mantem o footer no final da pagina */
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3689D6; /* Harmonize footer color */
+    color: white;
+}
+
+/* Return to top button styles */
+.return-to-top {
+    position: fixed; /* Keeps button in place */
+    bottom: 20px; /* Distance from bottom of page */
+    right: 20px; /* Distance from right of page */
+    width: 50px; /* Square button */
+    height: 50px; /* Square button */
+    background-color: #ffffff; /* Same color as the background */
+    border: 3px solid rgb(82, 142, 150); /* Button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor on hover */
+    outline: none; /* Maintains appearance */
+    font-size: 30px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px; /* Centers text vertically */
+}
+
+.return-to-top:hover {
+    box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Focus effect for button */
+}
+
+#loginPagina {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#login {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#login h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#login label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: #555;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login button.login-page-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#login button.login-page-button:hover {
+    background-color: #218838;
+}
+
+#login a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+#login a:hover {
+    text-decoration: underline;
+}
+
+/* Pagina de cadastro */
+
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.6), rgba(0, 128, 192, 0));
+}
+
+.cadastro-form {
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.7), rgba(0, 128, 192, 0));
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.349);
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width for better responsiveness */
+}
+
+.form-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.input-field {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.cadastrar-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cadastrar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
