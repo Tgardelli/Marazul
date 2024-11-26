@@ -24,4 +24,4 @@ Acesse o projeto pelo [GitHub](https://github.com/vitoriamillnitz/Marazul) ou [G
 - ``CSS``
 
 # Autores
-![Vitória Millnitz](![alt text](image-1.png))
+![Vitória Millnitz](image-1.png)
