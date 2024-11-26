@@ -6,7 +6,7 @@
 
 MarAzul é um projeto que tem como objetivo contribuir com a conservação e o uso sustentável dos oceanos, mares e recursos marinhos, disponibilizando uma lista das principais organizações que apoiam essa causa e como ajudar. Além de apresentar algumas curiosidades sobre o que existe na vida na água e dicas de preservação.
 
-<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-14.svg" height=200/>
+<img src="https://brasil.un.org/profiles/undg_country/themes/custom/undg/images/SDGs/pt-br/SDG-14.svg" width = 200 height=200/>
 
 # 🛠️ Funcionalidades do projeto
 
