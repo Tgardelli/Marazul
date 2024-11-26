@@ -7,9 +7,9 @@ MarAzul é um projeto que tem como objetivo contribuir com a conservação e o u
 
 # 🛠️ Funcionalidades do projeto
 
-- Sobre: Contém informações importantes sobre o projeto e seu funcionamento.
-- Parceiros: Lista de organizações que têm parceira com o projeto.
-- Cadastro: Página que contém o formulário de cadastro e o botão de envio que direciona o usuário à página de login. 
+- ``Sobre:`` Contém informações importantes sobre o projeto e seu funcionamento.
+- ``Parceiros:`` Lista de organizações que têm parceira com o projeto.
+- ``Cadastro:`` Página que contém o formulário de cadastro e o botão de envio que direciona o usuário à página de login. 
 
 # 📁 Acesso ao projeto
 
@@ -23,5 +23,10 @@ Acesse o projeto pelo [GitHub](https://github.com/vitoriamillnitz/Marazul) ou [G
 
 # Autores
 
-[<img src="imgs/Vitoria.png" width=115><br><sub>Vitória Silva Millnitz</sub>]
+<img src="imgs/Vitoria.png" width=115><br><sub>Vitória Silva Millnitz</sub>
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 
