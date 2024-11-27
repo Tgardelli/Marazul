@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     width: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Light background color for better contrast */
+    background-color: #ffffff; /* Cor de fundo clara para melhor contraste */
 }
 
 * {
@@ -13,10 +13,10 @@ body, html {
     box-sizing: border-box;
 }
 
-/* aparencia do menu */
+/* aparência do menu */
 header.main-header {
     background-color: #3689D6; /* cor do menu */
-    height: 10vh; /* 10% do tamanho da pagina */
+    height: 10vh; /* 10% do tamanho da página */
     display: flex;
     justify-content: space-between; /* adiciona espaço entre os elementos */
     align-items: center;
@@ -26,8 +26,11 @@ header.main-header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
+    font-family: "Ribeye Marrow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .menu-container {
@@ -35,7 +38,7 @@ header.main-header {
     align-items: center;
 }
 
-.menu-item, .login-button {
+.menu-item, .cadastro-button {
     color: white;
     text-decoration: none;
     margin-left: 1.5rem; /* ajusta de maneira relativa a fonte */
@@ -43,7 +46,7 @@ header.main-header {
     font-size: 1rem; /* ajusta a fonte de maneira relativa */
 }
 
-.login-button {
+.cadastro-button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 4px;
@@ -51,16 +54,16 @@ header.main-header {
     transition: all 0.3s ease; /* efeito de transição */
 }
 
-.login-button:hover {
+.cadastro-button:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
 }
 
 /* Estilo principal */
 main {
-    margin: 5px auto 0 auto; /* Margin to overlap header and center */
-    max-width: 1920px; /* Limit maximum content width */
-    background-color: white; /* Background color for content area */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+    margin: 5px auto 0 auto; /* Margem para deixar uma barra entre o header e a pagina e centralizar */
+    max-width: 1920px; /* Limitar largura máxima do conteúdo */
+    background-color: white; /* Cor de fundo para a área de conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o conteúdo */
 }
 
 main::before {
@@ -69,16 +72,16 @@ main::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Full-page gradient */
+    height: 100vh; /* Gradiente de página inteira */
     pointer-events: none;
-    z-index: -1; /* Doesn't interfere with other elements */
+    z-index: -1; /* Não interfere em outros elementos */
 }
 
 /* Section styles */
 div[id^="parte"] p {
     margin-bottom: 20px;
     line-height: 1.6;
-    color: #fff; /* White text for visibility */
+    color: #fff; /* Texto branco para visibilidade */
 }
 
 #parte1 {
@@ -90,13 +93,13 @@ div[id^="parte"] p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 1px; /* Rounded corners */
+    padding: 20px; /* Adicionar preenchimento para espaçamento */
+    border-radius: 1px; /* Cantos arredondados */
 }
 
 #parte2, #parte3, #parte4, #parte5, #parte6, #parte7 {
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 1px; /* Rounded corners */
+    padding: 20px; /* Adicionar preenchimento para espaçamento */
+    border-radius: 1px; /* Cantos arredondados */
 }
 
 #parte2 {
@@ -135,24 +138,24 @@ main p {
 
 .texto-e-imagem {
     display: flex;
-    align-items: center; /* Centers items vertically */
-    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Centraliza itens verticalmente */
+    justify-content: space-between; /* Espaço entre texto e imagem */
 }
 
 .div-img {
-    max-width: 30%; /* Adjust size as needed */
-    height: auto; /* Maintains aspect ratio */
-    border: 3px solid white; /* Adds a white border around the image */
+    max-width: 30%; /* Ajustar tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+    border: 3px solid white; /* Adiciona borda branca ao redor da imagem */
     border-radius: 5px;
-    margin-left: 20px; /* Adds space between text and image */
+    margin-left: 20px; /* Adicionar espaço entre texto e imagem */
 }
 
 .texto-intro h1 {
-    font-size: 1.5em; /* Font size for the main heading */
+    font-size: 1.5em; /* Tamanho da fonte para o título principal */
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    color: #220d3a; /* Text color */
-    margin-bottom: 10px; /* Margin below the heading */
+    color: #220d3a; /* Cor do texto */
+    margin-bottom: 10px; /* Margem abaixo do título */
     text-align: center;
 }
 
@@ -163,34 +166,34 @@ main p {
 
 /* Estilos do footer */
 footer {
-    margin-top: auto; /* Mantem o footer no final da pagina */
+    margin-top: auto; /* Mantém o footer no final da página */
     text-align: center;
     padding: 10px 0;
-    background-color: #3689D6; /* Harmonize footer color */
+    background-color: #3689D6; /* Harmoniza cor do footer */
     color: white;
 }
 
-/* Return to top button styles */
+/* Botão para voltar ao topo estilos */
 .return-to-top {
-    position: fixed; /* Keeps button in place */
-    bottom: 20px; /* Distance from bottom of page */
-    right: 20px; /* Distance from right of page */
-    width: 50px; /* Square button */
-    height: 50px; /* Square button */
-    background-color: #ffffff; /* Same color as the background */
-    border: 3px solid rgb(82, 142, 150); /* Button border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Changes cursor on hover */
-    outline: none; /* Maintains appearance */
+    position: fixed; /* Mantém o botão em seu lugar */
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px; /* Distância da direita da página */
+    width: 50px; /* Botão quadrado */
+    height: 50px; /* Botão quadrado */
+    background-color: #ffffff; /* Mesma cor do fundo */
+    border: 3px solid rgb(82, 142, 150); /* Borda do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    outline: none; /* Mantém a aparência */
     font-size: 30px;
     color:black;
     text-decoration: none;
     text-align: center;
-    line-height: 35px; /* Centers text vertically */
+    line-height: 35px; /* Centraliza texto verticalmente */
 }
 
 .return-to-top:hover {
-    box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Focus effect for button */
+    box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Efeito de foco para o botão */
 }
 
 #loginPagina {
@@ -283,7 +286,7 @@ footer {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.349);
     width: 100%;
-    max-width: 400px; /* Limit the maximum width for better responsiveness */
+    max-width: 400px; /* Limitar largura máxima para melhor responsividade */
 }
 
 .form-title {
@@ -307,7 +310,7 @@ footer {
     border-radius: 6px;
     border: 1px solid #ccc;
     width: 100%;
-    box-sizing: border-box; /* Include padding and border in element's total width */
+    box-sizing: border-box; /* Incluir preenchimento e borda na largura total do elemento */
 }
 
 .cadastrar-button {
@@ -319,7 +322,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     color: white;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease; /* Transição suave para o efeito de passar o mouse */
 }
 
 .cadastrar-button:hover {
