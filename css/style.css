@@ -4,7 +4,6 @@ body, html {
     padding: 0;
     width: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Cor de fundo clara para melhor contraste */
 }
 
 * {
@@ -13,7 +12,7 @@ body, html {
     box-sizing: border-box;
 }
 
-/* aparência do menu */
+/* Appearance of the menu */
 header.main-header {
     background-color: #3689D6; /* cor do menu */
     height: 10vh; /* 10% do tamanho da página */
@@ -29,7 +28,6 @@ header.main-header {
     font-size: 2.2rem;
     font-weight: bold;
     font-family: "Ribeye Marrow", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -58,9 +56,9 @@ header.main-header {
     background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
 }
 
-/* Estilo principal */
+/* Main style */
 main {
-    margin: 5px auto 0 auto; /* Margem para deixar uma barra entre o header e a pagina e centralizar */
+    margin: 1px auto 0 auto; /* Margem para deixar uma barra entre o header e a pagina e centralizar */
     max-width: 1920px; /* Limitar largura máxima do conteúdo */
     background-color: white; /* Cor de fundo para a área de conteúdo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o conteúdo */
@@ -77,27 +75,25 @@ main::before {
     z-index: -1; /* Não interfere em outros elementos */
 }
 
-/* Section styles */
+/* Estilo das partes do index */
 div[id^="parte"] p {
-    margin-bottom: 20px;
+    margin-left: 10px;
     line-height: 1.6;
     color: #fff; /* Texto branco para visibilidade */
 }
 
 #parte0 {
-    margin-top: 30px;
+    margin-top: 5px;
     background-color: #3689D6;
 }
 
-
 #parte1 {
-    background: linear-gradient(to top, rgba(0, 128, 192, 0.726), rgba(0, 128, 192, 0)), url('/imgs/praia.png');
+    background: linear-gradient(to top, rgb(30, 157, 221) 5%, rgba(13, 96, 138, 0) 10%), url('/imgs/praia.png');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
     display: flex;
-    padding: 20px; /* Adicionar preenchimento para espaçamento */
     border-radius: 1px; /* Cantos arredondados */
 }
 
@@ -124,20 +120,25 @@ div[id^="parte"] p {
 
 #parte6 {
     background: linear-gradient(to top, rgba(233, 233, 233, 0.8) 0%, rgba(233, 233, 233, 0.8) 100%);
+}
+
+#parte6 p{
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+}
+
+#parte6 h1 {
     color: rgb(86, 86, 255);
 }
 
-#parte6texto {
-    color: rgb(40, 52, 160);
-}
-
-/* Estilo para texto e imagem */
+/* Style for text and image */
 main p {
-    font-size: 1.2rem;
+    font-size: 1.25em;
     line-height: 1.6;
     color: #333;
     margin: auto;
     padding: 5px;
+    text-align: left;
 }
 
 main h1 {
@@ -152,41 +153,44 @@ main h1 {
 
 .central {
     text-align: center;
-    justify-items: initial;
 }
 
 .div-img {
     max-width: 30%; /* Ajustar tamanho conforme necessário */
-    height: 300px; /* Mantém a proporção */
+    max-height: 30%; /* Mantém a proporção da imagem */
     border: 3px solid white; /* Adiciona borda branca ao redor da imagem */
     border-radius: 5px;
     margin-left: 20px; /* Adicionar espaço entre texto e imagem */
 }
 
-.texto-intro h1 {
-    font-size: 1.5em; /* Tamanho da fonte para o título principal */
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    color: #220d3a; /* Cor do texto */
-    margin-bottom: 10px; /* Margem abaixo do título */
-    text-align: center;
-}
 
-.texto-intro p {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-}
-
-/* Estilos do footer */
+/* CSS do footer */
 footer {
     margin-top: auto; /* Mantém o footer no final da página */
-    text-align: center;
-    padding: 10px 0;
+    text-align: center; /* Change to left-align content */
+    padding: 20px 0;
     background-color: #3689D6; /* Harmoniza cor do footer */
     color: white;
+    justify-content: center; /* Center the container horizontally */
+    display:inline-flexbox;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content horizontally */
 }
 
-/* Botão para voltar ao topo estilos */
+footer a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 0; /* Optional: Add some vertical spacing between links */
+    text-align: left; /* Aligns wrapped text to the left */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* CSS da Seta */
 .return-to-top {
     position: fixed; /* Mantém o botão em seu lugar */
     bottom: 20px; /* Distância da parte inferior da página */
@@ -199,7 +203,7 @@ footer {
     cursor: pointer; /* Muda o cursor ao passar o mouse */
     outline: none; /* Mantém a aparência */
     font-size: 30px;
-    color:black;
+    color: black;
     text-decoration: none;
     text-align: center;
     line-height: 35px; /* Centraliza texto verticalmente */
@@ -209,9 +213,7 @@ footer {
     box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Efeito de foco para o botão */
 }
 
-.footer {
-    color: white;
-}
+/* Pagina de Login */
 
 #loginPagina {
     font-family: Arial, sans-serif;
