@@ -402,7 +402,7 @@ footer a:hover {
     background: linear-gradient(to top, rgba(0, 128, 192, 0.6), rgba(0, 128, 192, 0));
 }
 
-/* Specific Styles */
+/* Fundo especifico do Sobre */
 
 #sobre {
     background-color: #e6f7ff;
@@ -413,5 +413,76 @@ footer a:hover {
 }
 
 #nossos-valores {
+    background-color: #e6f7ff;
+}
+
+/* Pagina Parceiros */
+
+#individual h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#individual p {
+    color: #555;
+    padding: 10px;
+}
+
+#ongs h1{
+    color: #333;
+    text-align: center;
+}
+
+#ongs p{
+    color: #555;
+}
+
+#locais h1{
+    text-align: center;
+    color: #333;
+}
+
+#locais ul {
+    color: #333;
+    list-style-type: none;
+    padding: 0;
+}
+
+#locais li {
+    background-color: #e6f7ff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    color: #555;
+}
+
+/* Estilo das Div */
+#individual, #ongs, #locais {
+    max-width: 1920px;
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.parceiros-div {
+    height: 83vh;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.6), rgba(0, 128, 192, 0));
+}
+
+/* Fundo especifico do Parceiros */
+
+#individual {
+    background-color: #e6f7ff;
+}
+
+#ongs {
+    background-color: #e6f7ff;
+}
+
+#locais {
     background-color: #e6f7ff;
 }
