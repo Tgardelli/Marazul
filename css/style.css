@@ -12,7 +12,7 @@ body, html {
     box-sizing: border-box;
 }
 
-/* Appearance of the menu */
+/* Menu de navegação */
 header.main-header {
     background-color: #3689D6; /* cor do menu */
     height: 10vh; /* 10% do tamanho da página */
@@ -56,11 +56,10 @@ header.main-header {
     background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
 }
 
-/* Main style */
+/* Main Geral */
 main {
     margin: 1px auto 0 auto; /* Margem para deixar uma barra entre o header e a pagina e centralizar */
     max-width: 1920px; /* Limitar largura máxima do conteúdo */
-    background-color: white; /* Cor de fundo para a área de conteúdo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o conteúdo */
 }
 
@@ -75,7 +74,7 @@ main::before {
     z-index: -1; /* Não interfere em outros elementos */
 }
 
-/* Estilo das partes do index */
+/* Pagina index */
 div[id^="parte"] p {
     margin-left: 10px;
     line-height: 1.6;
@@ -172,7 +171,6 @@ footer {
     background-color: #3689D6; /* Harmoniza cor do footer */
     color: white;
     justify-content: center; /* Center the container horizontally */
-    display:inline-flexbox;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center the content horizontally */
 }
@@ -346,4 +344,74 @@ footer a:hover {
 
 .cadastrar-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Pagina Sobre */
+
+#sobre h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#sobre p {
+    color: #555;
+    padding: 10px;
+}
+
+#nossa-visao h1{
+    color: #333;
+}
+
+#nossa-visao p{
+    color: #555;
+}
+
+#nossos-valores h1{
+    color: #333;
+}
+
+#nossos-valores ul {
+    color: #333;
+    list-style-type: none;
+    padding: 0;
+}
+
+#nossos-valores li {
+    background-color: #e6f7ff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    color: #555;
+}
+
+/* Estilo das Div */
+#sobre, #nossa-visao, #nossos-valores {
+    max-width: 1920px;
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.sobre-div {
+    height: 83vh;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 128, 192, 0.6), rgba(0, 128, 192, 0));
+}
+
+/* Specific Styles */
+
+#sobre {
+    background-color: #e6f7ff;
+}
+
+#nossa-visao {
+    background-color: #e6f7ff;
+}
+
+#nossos-valores {
+    background-color: #e6f7ff;
 }
