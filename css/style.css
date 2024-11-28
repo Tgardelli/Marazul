@@ -84,15 +84,19 @@ div[id^="parte"] p {
     color: #fff; /* Texto branco para visibilidade */
 }
 
+#parte0 {
+    margin-top: 30px;
+    background-color: #3689D6;
+}
+
+
 #parte1 {
     background: linear-gradient(to top, rgba(0, 128, 192, 0.726), rgba(0, 128, 192, 0)), url('/imgs/praia.png');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px; /* Adicionar preenchimento para espaçamento */
     border-radius: 1px; /* Cantos arredondados */
 }
@@ -115,7 +119,7 @@ div[id^="parte"] p {
 }
 
 #parte5 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(233, 233, 233, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 90%, rgba(233, 233, 233, 0.8) 100%);
 }
 
 #parte6 {
@@ -136,15 +140,24 @@ main p {
     padding: 5px;
 }
 
+main h1 {
+    color: white;
+}
+
 .texto-e-imagem {
     display: flex;
     align-items: center; /* Centraliza itens verticalmente */
     justify-content: space-between; /* Espaço entre texto e imagem */
 }
 
+.central {
+    text-align: center;
+    justify-items: initial;
+}
+
 .div-img {
     max-width: 30%; /* Ajustar tamanho conforme necessário */
-    height: auto; /* Mantém a proporção */
+    height: 300px; /* Mantém a proporção */
     border: 3px solid white; /* Adiciona borda branca ao redor da imagem */
     border-radius: 5px;
     margin-left: 20px; /* Adicionar espaço entre texto e imagem */
@@ -194,6 +207,10 @@ footer {
 
 .return-to-top:hover {
     box-shadow: 0 0 8px rgba(228, 60, 191, 0.6); /* Efeito de foco para o botão */
+}
+
+.footer {
+    color: white;
 }
 
 #loginPagina {
