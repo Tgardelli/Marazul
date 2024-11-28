@@ -87,7 +87,7 @@ div[id^="parte"] p {
 }
 
 #parte1 {
-    background: url('/imgs/praia.png');
+    background: url('praia.png');
     background-size: cover;
     background-position: center;
     width: 100%;
