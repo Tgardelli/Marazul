@@ -20,7 +20,7 @@ MarAzul é um projeto que tem como objetivo contribuir com a conservação e o u
 
 # 📁 Acesso ao projeto
 
-Acesse o projeto pelo [GitHub](https://github.com/vitoriamillnitz/Marazul) ou [GitHub Pages](https://vitoriamillnitz.github.io/Marazul/).
+Acesse o projeto pelo [GitHub](https://github.com/Tgardelli/Marazul) ou [GitHub Pages](https://tgardelli.github.io/Marazul/).
 
 # ✔️ Tecnologias utilizadas
 
