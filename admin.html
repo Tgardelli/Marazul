@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Cadastro de Usuários</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Melhorias visuais */
+        .form-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .form-button {
+            width: 200px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            background-color: #3689D6;
+            border: 2px solid white; /* Adiciona a borda branca */
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .form-button:hover {
+            background-color: #2c7bbf;
+        }
+
+        /* Estilo da lista */
+        #userList {
+            margin-top: 20px;
+        }
+
+        #userList li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Botão de Excluir */
+        .delete-button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #3689D6; /* Cor padrão do projeto */
+            border: 2px solid white; /* Adiciona a borda branca */
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .delete-button:hover {
+            background-color: #2c7bbf; /* Cor hover padrão do projeto */
+        }
+
+        /* Estilo do campo e botão de pesquisa */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-field {
+            width: 200px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px; /* Ajuste para adicionar espaçamento entre o campo e o botão */
+        }
+
+        .search-button {
+            width: 100px;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #3689D6;
+            border: 2px solid white; /* Adiciona a borda branca */
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #2c7bbf;
+        }
+
+        .user-list-container {
+            margin-top: 100px; /* Aumentando o espaçamento para 100px */
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo" style="display: flex; align-items: center; cursor:pointer;" onclick="window.location.href='index.html';">
+            <img src="imgs/logo.png" width="80" alt="logo do MarAzul">
+            <p>MarAzul</p>
+        </div>
+        <nav class="menu-container">
+            <a href="./sobre.html" class="menu-item">Sobre</a>
+            <a href="./parceiros.html" class="menu-item">Parceiros</a>
+            <button class="cadastro-button" onclick="window.location.href='cadastro.html';">Cadastro</button>
+            <a href="./admin.html" class="menu-item">Admin</a> <!-- Novo item de menu "Admin" -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="cadastro-container">
+            <form class="cadastro-form" id="userForm">
+                <h1 class="form-title">Cadastro de Novos Usuários</h1>
+                <label class="input-label" for="username">Nome do Usuário:</label>
+                <input class="input-field" type="text" id="username" name="username" required><br><br>
+                <label class="input-label" for="email">E-mail:</label>
+                <input class="input-field" type="email" id="email" name="email" required><br><br>
+                <div class="form-buttons">
+                    <button class="form-button" type="submit">Cadastrar</button>
+                    <button class="form-button" type="button" id="clearFields">Limpar Campos</button>
+                    <button class="form-button" type="button" id="clearList">Excluir Todos os Itens</button>
+                    <div class="search-container">
+                        <input class="search-field" type="text" id="searchField" placeholder="Pesquisar...">
+                        <button class="search-button" type="button" id="searchButton">Pesquisar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="user-list-container">
+                <ul id="userList"></ul> <!-- Lista para exibir os usuários -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="nav-footer">
+            <a href="https://tgardelli.github.io/CVfrontend/" target="_blank">Thiago Gardelli</a>
+            <p></p>
+            <a href="https://vitoriamillnitz.github.io/meu-site/" target="_blank">Vitória Silva Millnitz</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Função para salvar o usuário no Local Storage
+        function saveUser(user) {
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(user);
+            localStorage.setItem('users', JSON.stringify(users));
+        }
+
+        // Função para exibir os usuários na lista
+        function displayUsers(users = JSON.parse(localStorage.getItem('users')) || []) {
+            let userList = document.getElementById('userList');
+            userList.innerHTML = '';
+
+            users.forEach(function(user, index) {
+                let li = document.createElement('li');
+                li.textContent = `${user.date} - Nome: ${user.username}, E-mail: ${user.email}`;
+                let deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Excluir';
+                deleteButton.className = 'delete-button';
+                deleteButton.onclick = function() {
+                    deleteUser(index);
+                };
+                li.appendChild(deleteButton);
+                userList.appendChild(li);
+            });
+        }
+
+        // Função para excluir um usuário específico
+        function deleteUser(index) {
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            users.splice(index, 1);
+            localStorage.setItem('users', JSON.stringify(users));
+            displayUsers();
+        }
+
+        // Função para excluir todos os usuários
+        function clearUsers() {
+            localStorage.removeItem('users');
+            displayUsers();
+        }
+
+        // Event listener para o formulário
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let username = document.getElementById('username').value;
+            let email = document.getElementById('email').value;
+            let date = new Date().toLocaleString();
+
+            let user = {
+                username: username,
+                email: email,
+                date: date
+            };
+
+            saveUser(user);
+            displayUsers();
+
+            // Limpar o formulário
+            document.getElementById('userForm').reset();
+        });
+
+        // Event listener para o botão de limpar campos
+        document.getElementById('clearFields').addEventListener('click', function() {
+            document.getElementById('userForm').reset();
+        });
+
+        // Event listener para o botão de limpar lista
+        document.getElementById('clearList').addEventListener('click', function() {
+            clearUsers();
+        });
+
+        // Event listener para o botão de pesquisar
+        document.getElementById('searchButton').addEventListener('click', function() {
+            let searchValue = document.getElementById('searchField').value.toLowerCase();
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            let filteredUsers = users.filter(function(user) {
+                return user.username.toLowerCase().includes(searchValue) ||
+                       user.email.toLowerCase().includes(searchValue);
+            });
+            displayUsers(filteredUsers);
+        });
+
+        // Exibir usuários ao carregar a página
+        window.onload = function() {
+            displayUsers();
+        };
+    </script>
+</body>
+</html>
