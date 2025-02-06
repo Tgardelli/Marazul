@@ -16,6 +16,7 @@ MarAzul é um projeto que tem como objetivo contribuir com a conservação e o u
 - ``Parceiros:`` Lista de organizações que têm como objetivo melhorar o mar.
 - ``Login:`` Página que contém o formulário de login, um botão de recuperação de senha e um botão para pagina de cadastro.
 - ``Cadastro:`` Página que contém o formulário de cadastro e o botão de envio que direciona o usuário à página de login.
+- ``Admin:`` Pagina para cadastrar usuarios utilizando login e email.
 
 
 # 📁 Acesso ao projeto
@@ -26,6 +27,7 @@ Acesse o projeto pelo [GitHub](https://github.com/Tgardelli/Marazul) ou [GitHub 
 
 - ``HTML 5``
 - ``CSS``
+- ``Javascript``
 
 # Autores
 
