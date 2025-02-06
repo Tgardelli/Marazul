@@ -42,6 +42,8 @@ header.main-header {
     margin-left: 1.5rem; /* ajusta de maneira relativa a fonte */
     padding: 0.5rem 1rem; /* ajusta de maneira relativa a fonte */
     font-size: 1rem; /* ajusta a fonte de maneira relativa */
+    border: 2px solid white;
+    border-radius: 4px;
 }
 
 .cadastro-button {
@@ -53,6 +55,10 @@ header.main-header {
 }
 
 .cadastro-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
+}
+
+.menu-item:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Efeito quando passa o mouse em cima */
 }
 
